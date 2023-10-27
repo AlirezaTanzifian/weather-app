@@ -5,7 +5,7 @@ const Info = (props) => {
     const { lat, lon, temp, temp_max, temp_min, humidity, pressure, wind } = props.response
     return (
         <div className='flex flex-col justify-center items-center text-white'>
-            <div className='w-full flex justify-evenly md:text-lg mb-5'>
+            <div className='w-full flex flex-col items-center gap-2 md:flex-row md:justify-evenly md:text-lg mb-5'>
                 <div className='flex align-baseline'>
                     <span className='mr-1'>کمترین دما: { temp_min ? temp_min : "0" }</span>
                     <MyIcon icon="carbon:temperature-min" color="White" size="25px" />
@@ -33,7 +33,7 @@ const Info = (props) => {
                     <MyIcon icon="tabler:brand-speedtest" color="White" size="22px" />
                 </div>
             </div>
-            <div className='w-full md:w-3/4 flex justify-between'>
+            <div className='w-full md:w-3/4 flex flex-col items-center md:flex-row md:justify-between'>
                 <div className='flex align-baseline mb-3'>
                     <span className='mr-1'>طول جغرافیایی: { lon ? lon : "0" }</span>
                     <MyIcon icon="mdi:longitude" color="White" size="22px" />

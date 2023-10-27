@@ -54,7 +54,7 @@ const App = () => {
         }
       }
       else {
-        // throw new Error("پر کردن تمامی فیلد ها اجباری است")
+        throw new Error("پر کردن تمامی فیلد ها اجباری است")
       }
     } catch (e) {
       console.log(e)
